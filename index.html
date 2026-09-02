@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUpGame - Top Up Game Instan & Aman</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <nav class="flex items-center justify-between px-[6%] py-4">
+            <a href="#" class="text-xl font-extrabold tracking-tight">
+                Pand<span class="text-fuchsia-500">Store</span>Game
+            </a>
+
+            <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <li><a href="#beranda" class="hover:text-fuchsia-400 transition">Beranda</a></li>
+                <li><a href="#produk" class="hover:text-fuchsia-400 transition">Produk</a></li>
+                <li><a href="#cara" class="hover:text-fuchsia-400 transition">Cara Top Up</a></li>
+                <li><a href="#kontak" class="hover:text-fuchsia-400 transition">Kontak</a></li>
+            </ul>
+
+            <button id="menu-btn" aria-label="Buka menu" aria-expanded="false"
+                    class="md:hidden inline-flex flex-col justify-center gap-1.5 w-9 h-9">
+                <span class="block h-0.5 w-6 bg-slate-100 transition"></span>
+                <span class="block h-0.5 w-6 bg-slate-100 transition"></span>
+                <span class="block h-0.5 w-6 bg-slate-100 transition"></span>
+            </button>
+        </nav>
+
+        <ul id="mobile-menu" class="hidden md:hidden px-[6%] pb-4 text-sm font-medium text-slate-300">
+            <li><a href="#beranda" class="block py-2 hover:text-fuchsia-400">Beranda</a></li>
+            <li><a href="#produk" class="block py-2 hover:text-fuchsia-400">Produk</a></li>
+            <li><a href="#cara" class="block py-2 hover:text-fuchsia-400">Cara Top Up</a></li>
+            <li><a href="#kontak" class="block py-2 hover:text-fuchsia-400">Kontak</a></li>
+        </ul>
+    </header>
+
+
+    <section id="beranda" class="px-[6%] py-14 sm:py-20 text-center max-w-3xl mx-auto">
+        <h1 class="text-[clamp(1.75rem,5vw,3rem)] font-extrabold leading-tight">
+            Top Up Game Favorit,
+            <span class="bg-gradient-to-r from-fuchsia-500 to-violet-500 bg-clip-text text-transparent">Instan & Aman</span>
+        </h1>
+        <p class="mt-4 text-slate-400 text-[clamp(0.95rem,2vw,1.125rem)]">
+            Proses dijamin cepat, harga bersaing, dan CS aktif 24/7 buat bantu top up diamond, UC, atau voucher game kesayangan kamu. Jadi, tunggu apalagi? yuk top up sekarang!
+        </p>
+    </section>
+
+    <section id="produk" class="px-[6%] py-10">
+        <h2 class="text-2xl font-bold mb-6">Pilih Game Kamu</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+            <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-fuchsia-500 transition">
+                <img src="img/valorant.jpg" alt="Valorant" class="w-full aspect-square object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Valorant</h3>
+                    <p class="text-slate-400 text-sm mb-2">1000 Points</p>
+                    <p class="text-fuchsia-400 font-bold mb-3">Rp 98.000</p>
+                    <button class="w-full py-2 rounded-lg font-semibold bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:opacity-90 transition">Top Up Sekarang</button>
+                </div>
+            </article>
+
+            <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-fuchsia-500 transition">
+                <img src="img/pubg-mobile.jpg" alt="PUBG Mobile" class="w-full aspect-square object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">PUBG Mobile</h3>
+                    <p class="text-slate-400 text-sm mb-2">60 UC</p>
+                    <p class="text-fuchsia-400 font-bold mb-3">Rp 18.000</p>
+                    <button class="w-full py-2 rounded-lg font-semibold bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:opacity-90 transition">Top Up Sekarang</button>
+                </div>
+            </article>
+
+            <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-fuchsia-500 transition">
+                <img src="img/blood-strike.jpg" alt="Blood Strike" class="w-full aspect-square object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Blood Strike</h3>
+                    <p class="text-slate-400 text-sm mb-2">100 Gold</p>
+                    <p class="text-fuchsia-400 font-bold mb-3">Rp 16.500</p>
+                    <button class="w-full py-2 rounded-lg font-semibold bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:opacity-90 transition">Top Up Sekarang</button>
+                </div>
+            </article>
+
+            <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-fuchsia-500 transition">
+                <img src="img/free-fire.jpg" alt="Free Fire" class="w-full aspect-square object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Free Fire</h3>
+                    <p class="text-slate-400 text-sm mb-2">100 Diamonds</p>
+                    <p class="text-fuchsia-400 font-bold mb-3">Rp 15.500</p>
+                    <button class="w-full py-2 rounded-lg font-semibold bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:opacity-90 transition">Top Up Sekarang</button>
+                </div>
+            </article>
+
+            <article class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-fuchsia-500 transition">
+                <img src="img/mobile-legends.jpg" alt="Mobile Legends" class="w-full aspect-square object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Mobile Legends</h3>
+                    <p class="text-slate-400 text-sm mb-2">86 Diamonds</p>
+                    <p class="text-fuchsia-400 font-bold mb-3">Rp 22.000</p>
+                    <button class="w-full py-2 rounded-lg font-semibold bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:opacity-90 transition">Top Up Sekarang</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="cara" class="px-[6%] py-10 bg-slate-800/40">
+        <h2 class="text-2xl font-bold mb-6">Cara Top Up</h2>
+        <ol class="grid grid-cols-1 sm:grid-cols-3 gap-5 list-none">
+            <li class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+                <span class="text-fuchsia-500 font-extrabold text-2xl">1</span>
+                <p class="mt-2 text-slate-300 text-sm">Pilih game & nominal top up yang kamu mau.</p>
+            </li>
+            <li class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+                <span class="text-fuchsia-500 font-extrabold text-2xl">2</span>
+                <p class="mt-2 text-slate-300 text-sm">Masukkan User ID game & pilih metode pembayaran.</p>
+            </li>
+            <li class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+                <span class="text-fuchsia-500 font-extrabold text-2xl">3</span>
+                <p class="mt-2 text-slate-300 text-sm">Bayar, item otomatis masuk ke akun dalam hitungan detik.</p>
+            </li>
+        </ol>
+    </section>
+
+    <footer id="kontak" class="px-[6%] py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 PandStoreGame. Semua hak dilindungi.</p>
+        <p class="mt-1">Kontak: cs@pandstoregame &middot; WhatsApp 0812-2456-8967</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
